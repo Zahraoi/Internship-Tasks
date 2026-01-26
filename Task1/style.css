@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 25px;             
+    font-family: Arial, sans-serif;
+
+}
+
+
+header {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
+nav {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+
+main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+aside {
+    width: 10%;
+    height: 200px;
+}
+
+
+section {
+    width: 60%;
+    height: 200px;
+}
+
+
+footer {
+    height: 50px;
+}
+
+
+header, nav, footer,
+aside, section {
+
+    background: #eee;
+    display: flex;
+    align-items: center;        
+    justify-content: center; 
+    text-align: center;
+}
