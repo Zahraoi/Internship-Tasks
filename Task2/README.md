@@ -50,25 +50,15 @@ This project demonstrates practical understanding of:
 ---
 
 ##  Project Structure
-Task2/
-│
-├── index.html
-├── style.css
-|__ output.mp4
-├── README.md
-├── design.jpg
-└── images/
-├── logo.png
-├── play_store.png
-├── app_store.png
-├── top_screens.png
-├── sec_screens.png
-├── thhh_screens.png
-├── for_screens.png
-├── vectors.png
-├── peratude.png
-└── favicon.jpg
 
+1. index.html: The main entry point containing all markup and styles.
+2. design.jpg: The reference design mockup.
+
+## Assets:
+- logo.png (Catchub Logo)
+- top_screens.png, sec_screens.png, for_screens.png, thhh_screens.png (App Interface)
+-  app_store.png, play_store.png (Store Badges)
+- vectors.png, peratude.png, favicon.jpg (Icons and all)
 
 ----------------------------------------------
 
