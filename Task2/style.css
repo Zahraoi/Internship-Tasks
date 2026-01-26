@@ -1,0 +1,187 @@
+.image{
+  position: absolute;
+  top: 50px;
+  left: 65px;
+}
+.image1 {
+  position: absolute;
+  padding-top: 20px;
+  top: 180px;
+  left: 80px;
+}
+.image2{
+    position: absolute;
+    padding-top: 20px;
+    top: 180px;
+    left: 165px;
+}
+.image3{
+    width: 500px;
+    height: 300px;
+
+    position: absolute;
+    top: 20px;
+    left: 650px;
+}
+.image4{
+
+    width: 400px;
+    height: 500px;
+
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+.Head1{
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.Head2{
+    position: absolute;
+    top: 145px;
+    left: 70px;
+}
+
+.Head3{
+    position: absolute;
+    top: 405px;
+    left: 800px;
+}
+.para1{
+    position: absolute;
+    top: 435px;
+    left: 750px;
+}
+.Head4{
+    position: absolute;
+    top: 810px;
+    left: 160px;
+}
+.para2{
+    position: absolute;
+    top: 850px;
+    left: 140px;
+}
+.image5{
+    width: 500px;
+    height: 550px;
+
+    position: absolute;
+    top: 675px;
+    left: 700px;
+}
+.image6{
+    width: 500px;
+    height: 550px;
+
+    position: absolute;
+    top: 1020px;
+    left: 80px;   
+}
+.image7{
+    width: 350px;
+    height: 100px;
+
+    position: absolute;
+    top: 1300px;
+    left: 750px; 
+}
+.Head5{
+    position: absolute;
+    top: 1360px;
+    left: 850px;
+}
+.para3{
+    position: absolute;
+    top: 1390px;
+    left: 820px;
+}
+
+.Head6{
+    position: absolute;
+    top: 1620px;
+    left: 600px;  
+}
+.image8{
+    width: 150px;
+    height: 50px;
+
+    position: absolute;
+    top: 1690px;
+    left: 515px;  
+}
+.image9{
+    width: 150px;
+    height: 50px;
+    
+    position: absolute;
+    top: 1690px;
+    left: 665px;  
+}
+.para4{
+    position: absolute;
+    top: 1730px;
+    left: 550px; 
+}
+.image10{
+
+    width: 150px;
+    height: 90px;
+    
+    position: absolute;
+    top: 1800px;
+    left: 605px;  
+}
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+ /*tried to do it responsive but not fully responsive yet */
+  img, h1, h2, h3, h4, h5, h6, p {
+    position: static !important;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .image,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    width: 90%;
+    height: auto;
+  }
+
+  .image7 {
+    width: 70%;
+    height: auto;
+  }
+
+  .image8,
+  .image9 {
+    width: 140px;
+    height: auto;
+  }
+
+  .image10 {
+    width: 100px;
+  }
+
+  .para1, .para2, .para3, .para4 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .Head1 {
+    font-size: 18px;
+  }
+}
