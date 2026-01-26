@@ -35,7 +35,7 @@ The layout is divided into the following sections:
 1. Clone the Repository
 
 git clone <https://github.com/Zahraoi/Internship-Tasks>
-cd <Task1>
+cd Task1
 
 2. Open the Project
 
