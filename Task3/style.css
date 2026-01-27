@@ -1,0 +1,109 @@
+body {
+    margin: 20;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: white;
+    padding: 5px;
+}
+
+main {
+    background: #8b1c1c;
+    min-height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left {
+    top: 1300px;
+    width: 40%;
+    color: white;
+}
+
+.title {
+    font-size: 60px;
+    margin-top: 210px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+}
+
+.date {
+    margin-top: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+
+.right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right input,
+.right textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: white;
+}
+
+.right input::placeholder,
+.right textarea::placeholder {
+    color: #eee;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+}
+
+.small {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 12px;
+    background: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.last {
+    width: 80px;
+}
+
+footer {
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+}
+
+.last {
+       width: 50px;
+        transform: translateY(-10px) rotate(180deg);
+        background-color: #fff;
+}
