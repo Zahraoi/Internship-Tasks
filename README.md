@@ -45,6 +45,17 @@ A high-fidelity, responsive web replica of the Catchub mobile application landin
 
 ---
 
+### Task 3: Submission Form Design
+
+**Description:**
+A responsive replication of a specific award submission form design (screen1.png). Includes interactive form logic, word count validation, and a custom dark red aesthetic.
+
+**Technologies Used:** 
+- HTML5 
+- CSS3
+
+----
+
 ## Learning Objectives
 - Strengthen understanding of HTML semantic structure
 - Master CSS layout techniques (Flexbox & positioning)
