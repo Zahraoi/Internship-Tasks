@@ -1,0 +1,64 @@
+nav{
+    background-color: brown;
+    padding:30px
+    
+}
+.section{
+   
+    background-color: brown;
+}
+.heading{
+    font-size: 45px;
+    color: white;
+   
+}
+.second{
+    padding-top:0px;
+    font-size: 20px;
+}
+
+.section {
+    position: relative;
+    padding:30px
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0px;      
+    bottom: 0px;     
+    transform: rotate(180deg);
+    background-color: #fff;
+}
+.another{
+    height: 25px;
+    width: 25px;
+    padding-left: 50px;
+   
+}
+.heading2{
+    font-size: 30px;
+    
+    
+}
+.main-section{
+    padding: 30px;
+   
+}
+.clubs {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    margin-top: 40px;
+    gap:10px;
+}
+
+.club img {
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.club h4 {
+    margin: 0;
+    color: #000;
+}
