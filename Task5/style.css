@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+    display:flex
+}
+.contact {
+  text-align: right;
+  margin-right: 25px;
+}
+.contact p:nth-child(1){
+    color:red;
+    font-weight:bold;
+    text-decoration: underline black;
+    width:auto;
+    font-size: 20px;
+}
+.contact p:nth-child(2){
+    font-weight: bold;
+    font-size: 48px;
+
+}
+
+.navi {
+  background: #b22222;
+
+ 
+  border: none;
+}
+.navi ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.navi ul li {
+  margin: 0px;
+}
+.navi ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 23px 15px 0px 0 ;
+  display: block;
+}
+.navi ul li a:hover {
+ 
+  background-color: grey;
+}
+.images{
+  display:flex;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+.banner{
+  padding: 20px;
+  display: flex;
+   width: 530px;
+  height: 350px;
+  
+}
+.hero {
+  display: flex;
+  padding: 20px;
+}
+.left-hero img {
+  width: 530px;
+  height: 350px;
+}
+.right-hero {
+  height: 460px;
+  background-image: url('images/form_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20px;
+  flex: 1;
+}
+.right-hero h2 {
+  margin: 0 15px;
+  height: 40px;
+  width: 150px;
+  padding: 8px;
+  background-color: #b22222;
+}
+.right-hero span {
+  color: blue;
+  font-weight: bold;
+  font-size:30px ;
+}
+.tilt {
+  width: 150px;
+  margin-left: 410px;
+  margin-top: 35px;
+  transform: rotate(10deg);  /* 10 degree tilt right */
+}
+.right-hero form {
+  margin-left: 17%;
+  margin-top: -60px;
+}
+.right-hero form input{
+  width: 200px;
+  height: 30px;
+  margin: 4px;
+  margin-left: 20px;
+}
+.right-hero form textarea{
+  height:60px;
+  width: 350px;
+  margin: 5px 0 20px 0px;
+}
+.right-hero form p{
+  display: flex;
+  align-items: center ;
+  margin-left: -20px;
+}
+.right-hero button {
+  background: #b22222;
+  width: 250px;
+  color: white;
+  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 10px; */
+  cursor: pointer;
+}
+.right-hero button img {
+  margin-left: 5px;
+  width: 12px;
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+  line-height: 28px;
+}
+.box {
+  padding: 15px;
+}
+
+.boxes h3 {
+  margin-bottom: 10px;
+  color: maroon;
+}
+
+.boxes .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes .head1 {
+  flex: 1;
+}
+
+.boxes .head2 img {
+  width: 90px;
+  margin: 0 0 0 10px;
+  height: auto;
+}
+
+.boxes .icon img {
+  width: 100px;
+  margin: 5px;
+}
+.box1{
+   /* box-shadow: 0px 4px 15px rgba(0,0,0,0.2); */
+   border: 1px solid rgba(0,0,0,0.2);
+   height: 400px;
+   padding: 20px;
+   line-height: 30px;
+}
+.boxes button {
+  margin: 15px 0px 15px 130px;
+  background: #b22222;
+  width: 118px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.boxes button img {
+  margin-left: 5px;
+  width: 12px;
+}
+.practice {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.practice1 {
+  width: 25%;
+  margin-left: 40px;
+}
+.practice1 ul li{
+  color: gray;
+  list-style: none;
+  cursor: pointer;
+  margin: 0 0 5px 30px;
+}
+.practice1 h3 {
+  margin-bottom: 10px;
+}
+
+.area {
+  width: 260px;
+  justify-content: space-around;
+  height: 70px;
+  margin-top: 10px;
+  color: whitesmoke;
+  background-color: gray;
+  font-size: 18px;
+  display: block;
+  border-left: 6px solid #b22222;
+}
+.area1{
+  margin-top: 20px;
+}
+.area1 h4{
+  padding-top: 5px;
+  letter-spacing: 1px;
+
+}
+ .areas .area button{
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  margin-left: 140px;
+}
+.area2 img{
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 12px;
+} 
+.practice2 {
+  width: 40%;
+  padding: 0 20px;
+  line-height: 23px;
+}
+.practice2 h1 {
+  margin-bottom: 15px;
+}
+
+.practice3 {
+  width: 23%;
+}
+.practice3 p{
+  line-height: 28px;
+}
+.practice3 .side {
+  margin-bottom: 20px;
+}
+.practice3 button {
+  margin: 25px 0px 25px 70px;
+  background: #b22222;
+  width: 140px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.practice3 button img {
+  margin-left: 5px;
+  width: 12px;
+}
+footer {
+  text-align: end;
+  margin-bottom: 30px;
+}
+.awards{
+  display: block;
+  justify-content: end;
+  margin-left: 1050px;
+}
+.awards img {
+  display: block;
+  width: 80px;
+  margin: 10px 60px 10px 0;
+}
+.follow {
+  margin: 15px 60px 0 0;
+}
+.follow p {
+  font-weight: bold;
+  margin: 10px 53px 10px 0;
+}
+.social{
+  margin-right: 20px;
+}
+.social img {
+  width: 30px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
