@@ -24,18 +24,13 @@ main {
     margin-bottom: 20px;
 }
 
-
-aside {
-    width: 20%;
-    height: 220px;
-}
-
-
 section {
     width: 60%;
     height: 220px;
 }
-
+.mani{
+    width: 85%;
+}
 
 footer {
     height: 120px;
