@@ -1,5 +1,5 @@
 body {
-    margin: 20;
+    margin: 20px;
     padding: 15px;
     font-family: Arial, sans-serif;
 }
@@ -23,7 +23,7 @@ main {
 }
 
 .left {
-    top: 1300px;
+ 
     width: 40%;
     color: white;
 }
@@ -85,16 +85,7 @@ label {
     font-weight: bold;
     cursor: pointer;
 }
-  
-footer {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
 
-.last {
-    width: 80px;
-}
 
 footer {
     position: absolute;
