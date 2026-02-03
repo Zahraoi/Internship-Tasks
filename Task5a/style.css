@@ -32,7 +32,7 @@ header {
 .navi {
   background: #b22222;
 
- 
+  
   border: none;
 }
 .navi ul {
@@ -48,6 +48,7 @@ header {
   text-decoration: none;
   padding: 23px 15px 0px 0 ;
   display: block;
+
 }
 .navi ul li a:hover {
  
