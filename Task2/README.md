@@ -1,6 +1,6 @@
 #  Catchub Landing Page – Responsive Web Replica
 
-This project is a responsive(somewhat) web replica of the **Catchub mobile application landing page**, developed using **HTML5 and CSS3 only**. The main focus of this task was to accurately recreate the original UI design while ensuring the layout remains usable and visually consistent across different screen sizes.
+This project is a web replica of the **Catchub mobile application landing page**, developed using **HTML5 and CSS3 only**. The main focus of this task was to accurately recreate the original UI design while ensuring the layout remains usable and visually consistent across different screen sizes.
 
 -----------------------------------
 
@@ -10,8 +10,7 @@ The objective of this task was to transform a static design reference into a ful
 This project demonstrates practical understanding of:
 - HTML page structuring
 - CSS positioning
-- Responsive design using media queries(somewhat)
-- Layout control with Flexbox and custom styling
+- Layout control custom styling
 
 --------------------------------
 
@@ -22,11 +21,6 @@ This project demonstrates practical understanding of:
 - Consistent spacing, alignment, and visual hierarchy
 - Clean and minimal user interface
 
-2. Responsive Behavior
-- Layout adapts smoothly to different screen sizes
-- Desktop layout uses structured positioning for visual accuracy
-- Mobile view reorganizes content for better readability without breaking design
-- Its not perfectly responsive right now but it will be worked upon
 
 3. Alternating Layout Sections
 - **Channels** → Image on left, text on right
@@ -43,21 +37,20 @@ This project demonstrates practical understanding of:
 ## Technologies Used
 - **HTML5** – Markup and structure
 - **CSS3** – Styling and layout
-- **Media Queries** – Responsive design
-- **Flexbox** – Section alignment
-- **Google Fonts** – Modern typography
+
 
 ---
 
 ##  Project Structure
 
 1. index.html: The main entry point containing all markup and styles.
-2. design.jpg: The reference design mockup.
+2. style.css: It contains all the custom styling done on the web page.
+3. design.jpg: The reference design mockup.
 
 ## Assets:
 - logo.png (Catchub Logo)
 - top_screens.png, sec_screens.png, for_screens.png, thhh_screens.png (App Interface)
--  app_store.png, play_store.png (Store Badges)
+- app_store.png, play_store.png (Store Badges)
 - vectors.png, peratude.png, favicon.jpg (Icons and all)
 
 ----------------------------------------------
