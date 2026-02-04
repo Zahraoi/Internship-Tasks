@@ -1,67 +1,142 @@
-nav {
-  background-color: brown;
-  padding: 30px;
-  height:160px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 25px;
 }
 
-.heading {
-  font-size: 45px;
-  color: white;
+
+nav {
+  background-color: brown;
+  height: 120px;
+  display: flex;
+  align-items: center; 
+  padding: 0 60px;
 }
 
-.second {
-  padding-top: 0px;
-  font-size: 20px;
+nav img {
+  padding-top:10px;
+  height: 120px; 
+  object-fit: contain;
 }
+
 
 .section {
   background-color: brown;
   position: relative;
-  padding: 30px;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 95%);
+  padding: 70px 60px; 
 }
-.icon {
-  height: 50px;
-  width: 50px;
+
+
+.heading {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.second {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 30px;
+}
+
+
+.text-block {
+  max-width: 900px;
+}
+
+.hero-text {
+  color: white;
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+
+.award-icon {
+  width: 96px;
+  height: 96px;
+  background-color: white;
   position: absolute;
   right: 0px;
+  bottom: 0px; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%); /*clip path bhi use kar diya */
+
+}
+
+.award-icon img {
+  width: 0px;
+  height: 0px;
+  object-fit: contain;
+}
+
+
+footer .award-icon {
+  width: 88px;
+  height: 88px;
+  right:0px;
   bottom: 0px;
-  transform: rotate(180deg);
-  background-color: #fff;
 }
+
+
+.main-section {
+  padding: 60px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .another {
-  height: 25px;
-  width: 25px;
-  padding-left: 50px;
+  width: 26px;
+  height: 26px;
 }
+
 .heading2 {
   font-size: 38px;
   font-weight: 900;
   letter-spacing: 1px;
 }
 
-.main-section {
-  padding: 30px;
-}
+
 .clubs {
-  padding-left: 50px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   margin-top: 50px;
 }
 
+.club {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .club img {
-  height: 65px;
-  margin-bottom: 10px;
+  width: 70px;
+  margin-bottom: 12px;
 }
 
 .club h4 {
-  text-align: center;
-  margin: 0;
-  color: #000;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.club h4:first-of-type {
+  color: brown;
+  font-weight: 700;
 }
