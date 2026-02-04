@@ -42,8 +42,9 @@ main {
 
 .date {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
+    font-weight: bolder;
 }
 
 
@@ -75,6 +76,7 @@ label {
 .small {
     font-size: 18px;
     color: #ddd;
+    margin-top: 0px;
 }
 
 .submit {
@@ -91,10 +93,11 @@ footer {
     position: absolute;
     bottom: -15px;
     right: 0px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
 .last {
-       width: 50px;
+       width: 80px;
         transform: translateY(-10px) rotate(180deg);
         background-color: #fff;
 }
