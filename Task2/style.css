@@ -1,207 +1,194 @@
-.image{
-  position: absolute;
-  top: 50px;
-  left: 65px;
-  width:200px;
-  height:100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.image1 {
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  padding: 50px 70px;
+}
+
+.logo {
+  width: 180px;
+ margin-left: 60px;
+}
+
+.hero h1 {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 60px;
+  
+}
+
+.stores {
+  margin-top: 20px;
+}
+
+.stores img {
+  width: 130px;
+  margin-right: 10px;
+}
+
+.hero-mobiles {
   position: absolute;
-  padding-top: 20px;
-  top: 180px;
+  right: 120px;
+  top: 40px;
+  width: 520px;
+}
+
+/* CHANNELS WALA SECTION*/
+.channels {
+  position: relative;
+  height: 500px;
+}
+
+.channels-img {
+  position: absolute;
   left: 80px;
-  width:85px;
-   height:35px;
+  top: 60px;
+  width: 420px;
 }
-.image2{
-    position: absolute;
-    padding-top: 20px;
-    top: 180px;
-    left: 165px;
-    width:85px;
-     height:35;
-     padding-left: 10px;
-}
-.image3{
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 20px;
-    right: 150px;
-    
-}
-.image4{
 
-    width: 400px;
-    height: 500px;
-
-    position: absolute;
-    top: 300px;
-    left: 20px;
-}
-.Head1{
+.channels-text {
   position: absolute;
-  top: 120px;
-  left: 30px;
-  font-size: larger;
-  font-weight: 300;
-}
-.Head2{
-    position: absolute;
-    top: 145px;
-    left: 70px;
-    font-size: small;
+  right: 150px;
+  top: 170px;
 }
 
-.Head3{
-    position: absolute;
-    top: 405px;
-    left: 800px;
-    font-size: larger;
-}
-.para1{
-    position: absolute;
-    top: 435px;
-    left: 750px;
-}
-.Head4{
-    position: absolute;
-    top: 810px;
-    left: 160px;
-    font-size: larger;
-}
-.para2{
-    position: absolute;
-    top: 850px;
-    left: 140px;
-}
-.image5{
-    width: 500px;
-    height: 550px;
-
-    position: absolute;
-    top: 675px;
-    left: 700px;
-}
-.image6{
-    width: 500px;
-    height: 550px;
-
-    position: absolute;
-    top: 1020px;
-    left: 80px;   
-}
-.image7{
-    width: 350px;
-    height: 100px;
-
-    position: absolute;
-    top: 1300px;
-    left: 750px; 
-}
-.Head5{
-    position: absolute;
-    top: 1360px;
-    left: 850px;
-    font-size: larger;
-     padding: 10px;
-}
-.para3{
-    position: absolute;
-    top: 1390px;
-    left: 820px;
-    padding:25px;
+.channels-text h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+   text-align: center;
 }
 
-.Head6{
-    position: absolute;
-    top: 1620px;
-    left: 600px; 
-    font-size: 15px; 
-}
-.image8{
-    width: 150px;
-    height: 50px;
-
-    position: absolute;
-    top: 1690px;
-    left: 515px;  
-}
-.image9{
-    width: 150px;
-    height: 50px;
-    
-    position: absolute;
-    top: 1690px;
-    left: 665px;  
-    padding-left: 10px;
-}
-.para4{
-    position: absolute;
-    top: 1730px;
-    left: 550px; 
-}
-.image10{
-
-    width: 150px;
-    height: 90px;
-    
-    position: absolute;
-    top: 1800px;
-    left: 605px;  
+.channels-text p {
+  font-size: 16px;
+  line-height: 1.6;
+   text-align: center;
 }
 
-.abc{
+/* MESSAGES WALA SECTION */
+.messages {
+  position: relative;
+  height: 520px;
+}
+
+.messages-text {
+  position: absolute;
+  left: 150px;
+  top: 170px;
+}
+
+.messages-text h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.messages-text p {
+  font-size: 16px;
+  line-height: 1.6;
+   text-align: center;
+}
+
+.messages-img {
+  position: absolute;
+  right: 120px;
+  top: 80px;
+  width: 420px;
+}
+
+/* FUTURE WALA SECTION*/
+.future {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 160px;
+  overflow: hidden;
+}
+
+
+.future-vectors {
+  position: absolute;
+  top: 30%;
+  left: 78%;               
+  transform: translate(-50%, -50%);
+  width: 420px;
+  opacity: 15;
+  z-index: 1;
+}
+
+
+/* PHONE IMAGE WALA SECTION */
+.future-image {
+  position: relative;
+  z-index: 3;
+}
+
+.future-image img {
+  width: 460px;
+}
+
+/* TEXT BLOCK WALA SECTION*/
+.future-text {
+  margin-left: auto;
+  max-width: 360px;
+  position:relative;
+  z-index: 2;
+}
+
+.future-text h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+   text-align: center;
+}
+
+.future-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+   text-align: center;
+}
+
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+.contact a {
   text-decoration: none;
+  color: #0077cc;
 }
 
-
-@media (max-width: 768px) {
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
- /*tried to do it responsive but not fully responsive yet */
-  img, h1, h2, h3, h4, h5, h6, p {
-    position: static !important;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .image,
-  .image3,
-  .image4,
-  .image5,
-  .image6 {
-    width: 90%;
-    height: auto;
-  }
-
-  .image7 {
-    width: 70%;
-    height: auto;
-  }
-
-  .image8,
-  .image9 {
-    width: 140px;
-    height: auto;
-  }
-
-  .image10 {
-    width: 100px;
-  }
-
-  .para1, .para2, .para3, .para4 {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .Head1 {
-    font-size: 18px;
-  }
+.footer-logo {
+  width: 120px;
+  margin-top: 25px;
 }
