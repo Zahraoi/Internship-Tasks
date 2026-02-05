@@ -10,7 +10,9 @@ header {
   align-items: center;
 }
 .logo{
-    display:flex
+    display:flex;
+   
+    height: 120px;
 }
 .contact {
   text-align: right;
@@ -31,29 +33,37 @@ header {
 
 .navi {
   background: #b22222;
+  height: 55px;
+}
 
-  
-  border: none;
-}
 .navi ul {
-  display: flex;
   list-style: none;
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
+  height: 55px;            
+  margin-right: 40px;
 }
+
 .navi ul li {
-  margin: 0px;
+  height: 55px;       
 }
+
 .navi ul li a {
+  display: flex;           
+  align-items: center;      
+  height: 100%;              
+  padding: 0 18px;
   color: white;
   text-decoration: none;
-  padding: 23px 15px 0px 0 ;
-  display: block;
-
+  font-weight: bold;
 }
+
+
 .navi ul li a:hover {
- 
   background-color: grey;
 }
+
 .images{
   display:flex;
   justify-content:space-between;
@@ -72,10 +82,10 @@ header {
 }
 .left-hero img {
   width: 530px;
-  height: 350px;
+  height: 430px;
 }
 .right-hero {
-  height: 460px;
+  height: 430px;
   background-image: url('images/form_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -84,22 +94,42 @@ header {
   flex: 1;
 }
 .right-hero h2 {
-  margin: 0 15px;
+  margin: 0px;
   height: 40px;
   width: 150px;
   padding: 8px;
   background-color: #b22222;
+  color:white
 }
 .right-hero span {
   color: blue;
   font-weight: bold;
   font-size:30px ;
 }
+
+.right-hero {
+  width: 45%;
+  position: relative;
+}
+
+
+
+.right-hero form label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+ 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
 .tilt {
-  width: 150px;
-  margin-left: 410px;
+  width: 190px;
+  margin-left: 450px;
   margin-top: 35px;
-  transform: rotate(10deg);  /* 10 degree tilt right */
+  transform: rotate(30deg); 
 }
 .right-hero form {
   margin-left: 17%;
@@ -110,10 +140,11 @@ header {
   height: 30px;
   margin: 4px;
   margin-left: 20px;
+  
 }
 .right-hero form textarea{
   height:60px;
-  width: 350px;
+  width: 330px;
   margin: 5px 0 20px 0px;
 }
 .right-hero form p{
@@ -125,13 +156,12 @@ header {
   background: #b22222;
   width: 250px;
   color: white;
-  margin-left: 5px;
+  margin-left: 10px;
   padding: 10px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 10px; */
   cursor: pointer;
 }
 .right-hero button img {
@@ -173,8 +203,11 @@ header {
   width: 100px;
   margin: 5px;
 }
+.boxes .icon img:nth-child(2){
+  width: 80px;
+}
 .box1{
-   /* box-shadow: 0px 4px 15px rgba(0,0,0,0.2); */
+  
    border: 1px solid rgba(0,0,0,0.2);
    height: 400px;
    padding: 20px;
@@ -210,7 +243,7 @@ header {
   margin-left: 40px;
 }
 .practice1 ul li{
-  color: gray;
+  color: rgb(211, 206, 206);
   list-style: none;
   cursor: pointer;
   margin: 0 0 5px 30px;
@@ -297,8 +330,11 @@ footer {
 }
 .awards img {
   display: block;
-  width: 80px;
+  width: 100px;
   margin: 10px 60px 10px 0;
+}
+.awards img:nth-child(2){
+  width: 80px;
 }
 .follow {
   margin: 15px 60px 0 0;
@@ -316,3 +352,141 @@ footer {
   margin-top: 25px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* RESPONSIVE WALA KAAM */
+
+@media (max-width: 768px) {
+
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+
+  .navi ul {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .left-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-hero {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .right-hero form {
+    margin: 20px;
+  }
+
+  .right-hero form textarea {
+    width: 100%;
+  }
+
+  .tilt {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: rotate(15deg);
+  }
+
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+  .practice {
+    flex-direction: column;
+  }
+
+  .practice1,
+  .practice2,
+  .practice3 {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .practice3 button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .awards {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navi ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navi ul li {
+    width: 100%;
+  }
+
+  .navi ul li a {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact p:nth-child(2) {
+    font-size: 32px;
+  }
+
+
+  .right-hero form input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .right-hero button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  .area {
+    width: 100%;
+  }
+
+  .areas .area button {
+    margin-left: auto;
+  }
+}
