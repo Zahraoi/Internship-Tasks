@@ -1,251 +1,370 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Task5(Tailwind)</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Task5(Tailwind)</title>
+  </head>
 
-<body class="bg-gray-100 text-gray-800">
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-white">
+      <div class="max-w-7xl mx-1 flex justify-between items-center p-0">
+        <img src="./Images/logo.png" alt="logo" class="h-32 m-0" />
 
+        <div class="text-right text-sm">
+          <p class="text-red-700 font-bold underline text-[22px]">
+            CALL OUR OFFICES NOW!
+          </p>
+          <p class="text-[40px] font-extrabold">540.433.6909</p>
+          <p class="text-gray-600 text-[18px]">
+            Get Your Questions Answered Fast
+          </p>
+        </div>
+      </div>
+    </header>
 
-<header class="bg-white border-b">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <img src="./Images/logo.png" alt="logo" class="h-16">
+    <nav class="bg-red-800 text-white">
+      <ul
+        class="max-w-7xl mx-auto flex justify-end gap-6 items-center text-sm font-semibold h-12"
+      >
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">HOME</a>
+        </li>
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">BIOGRAPHY</a>
+        </li>
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">BLOG</a>
+        </li>
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">AREAS WE SERVE</a>
+        </li>
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">LIBRARY</a>
+        </li>
+        <li class="hover:bg-gray-400 h-full px-3 flex items-center">
+          <a href="#">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="text-right text-sm">
-      <p class="text-red-700 font-bold">CALL OUR OFFICES NOW!</p>
-      <p class="text-2xl font-extrabold">540.433.6909</p>
-      <p class="text-gray-600">Get Your Questions Answered Fast</p>
-    </div>
-  </div>
-</header>
+    <section
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-white mt-6 shadow"
+    >
+      <img src="images/gurantee_banner.gif" class="w-full h-full" />
 
+      <div
+        class="bg-[url('./Images/form_bg.jpg')] bg-cover bg-center relative p-6"
+      >
+        <div class="flex justify-between items-start mb-4">
+          <h2 class="text-white font-bold text-xl bg-red-700 px-4 py-1">
+            QUESTIONS?
+          </h2>
 
-<nav class="bg-red-800 text-white">
-  <ul class="max-w-7xl mx-auto flex justify-end gap-6 p-4 text-sm font-semibold">
-    <li><a href="#">HOME</a></li>
-    <li><a href="#">BIOGRAPHY</a></li>
-    <li><a href="#">BLOG</a></li>
-    <li><a href="#">AREAS WE SERVE</a></li>
-    <li><a href="#">LIBRARY</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </ul>
-</nav>
+          <h3 class="text-2xl font-semibold text-right">
+            Have a <span class="text-blue-700 font-bold">Question</span><br />
+            About Your Case?
+          </h3>
+        </div>
 
+        <p class="text-sm mb-6 font-semibold">
+          Enter your information and get your questions answered<br />
+          quickly and discreetly or call us at <strong>540.433.6906</strong>
+        </p>
 
-<section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-white mt-6 shadow">
+        <img
+          src="images/confidential.png"
+          class="absolute top-48 right-6 w-44 rotate-12"
+        />
 
-  
-  <img src="images/gurantee_banner.gif" class="w-full">
+        <form class="space-y-2 text-sm">
+          <div class="grid grid-cols-[60px_300px] items-center gap-0">
+            <label>Name:</label>
+            <input type="text" class="h-10 bg-white border" />
+          </div>
 
+          <div class="grid grid-cols-[60px_300px] items-center gap-0">
+            <label>Email:</label>
+            <input type="email" class="h-10 bg-white border px-0" />
+          </div>
 
-  <div
-  class=" p-6 bg-[url('./Images/form_bg.jpg')] bg-no-repeat bg-cover bg-center relative">
+          <div class="grid grid-cols-[60px_300px] items-center gap-0">
+            <label>Phone:</label>
+            <input type="text" class="h-10 bg-white border px-0" />
+          </div>
 
-    <img src="./Images/form_bg.png" alt="form" class=" w-full absolute top-0 left-0 opacity-10 z-0">
-    <h2 class="text-red-700 font-bold text-xl">QUESTIONS?</h2>
-    <h3 class="text-2xl font-semibold mb-3">
-      Have a <span class="text-blue-700">Question</span><br>About Your Case?
-    </h3>
+          <div class="grid grid-cols-[60px_300px] gap-0">
+            <div></div>
+            <textarea
+              class="h-24 bg-white border px-3 py-2"
+              placeholder="Tell us about your case here..."
+            ></textarea>
+          </div>
 
-    <p class="text-sm mb-3 font-semibold">
-      Enter your information and get your questions answered quickly and discreetly
-      or call us at <strong>540.433.6906</strong>
-    </p>
+          <div class="flex justify-around items-center mt-4">
+            <p class="italic text-xs">100% Privacy Guaranteed</p>
 
-    <img src="images/confidential.png" class="absolute top-4 right-4 w-24 rotate-12">
+            <button
+              class="bg-red-700 text-white px-5 py-2 flex items-center gap-2"
+            >
+              Ask Us About Your Case
+              <img src="images/bullet_white.gif" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
 
-    <form class="space-y-2 text-sm">
-      <input class="w-full border p-2" placeholder="Name">
-      <input class="w-full border p-2" placeholder="Email">
-      <input class="w-full border p-2" placeholder="Phone">
-      <textarea class="w-full border p-2" rows="3" placeholder="Tell us about your case here..."></textarea>
+    <section
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"
+    >
+      <div class="bg-white p-4 shadow">
+        <h2 class="text-red-700 font-bold">Charged With DUI?</h2>
+        <h3 class="font-semibold mb-2">Free Case Evaluation</h3>
+        <div class="flex gap-3">
+          <p class="text-sm">
+            Being charged with a DUI can be scary. Get the help you deserve.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, veniam totam? <br />
+            <br />Enim, eius. Autem, eum aut ea fugiat rerum saepe pariatur
+            veniam sit.
+          </p>
 
-      <div class="flex justify-between items-center">
-        <p class="italic text-xs">100% Privacy Guaranteed</p>
-        <button class="bg-red-700 text-white px-4 py-2 flex items-center gap-2">
-          Ask Us About Your Case
-          <img src="images/bullet_white.gif">
+          <img src="images/paste_board.gif" class="w-full h-full" />
+        </div>
+        <button
+          class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center"
+        >
+          Click Here <img src="images/bullet_white.gif" />
         </button>
       </div>
-    </form>
-  </div>
-</section>
 
-<section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      <div class="bg-white p-4 shadow">
+        <h2 class="font-bold">Law <span class="text-red-700">Blog</span></h2>
+        <div class="flex justify-between">
+          <p class="text-sm">
+            Learn more about Virginia Traffic Laws. Lorem ipsum dolor, sit amet
+            consectetur adipisicing
+          </p>
+          <img src="images/pic1.gif" class="w-36" />
+        </div>
+        <button
+          class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center"
+        >
+          Click Here <img src="images/bullet_white.gif" />
+        </button>
 
- 
-  <div class="bg-white p-4 shadow">
-    <h2 class="text-red-700 font-bold">Charged With DUI?</h2>
-    <h3 class="font-semibold mb-2">Free Case Evaluation</h3>
-    <div class="flex gap-3">
-      <p class="text-sm">Being charged with a DUI can be scary. Get the help you deserve.</p>
-      <img src="images/paste_board.gif" class="w-16">
-    </div>
-    <button class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-      Click Here <img src="images/bullet_white.gif">
-    </button>
-  </div>
+        <hr class="my-3 text-gray-400" />
 
- 
-  <div class="bg-white p-4 shadow">
-    <h2 class="font-bold">Law Blog</h2>
-    <div class="flex justify-between">
-      <p class="text-sm">Learn more about Virginia Traffic Laws.</p>
-      <img src="images/pic1.gif" class="w-26">
-    </div>
-    <button class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-      Click Here <img src="images/bullet_white.gif">
-    </button>
-    
-
-    <hr class="my-3">
-    
-
-    <h2 class="font-bold">Case Results</h2>
-    <div class="flex justify-between">
-      <p class="text-sm">See how we help our clients.</p>
-      <img src="images/order_icon.gif" class="w-26">
-      
-    </div>
-    <button class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-      Click Here <img src="images/bullet_white.gif">
-    </button>
-  </div>
-
-
-  <div class="bg-white p-4 shadow text-center">
-    <div class="flex justify-center gap-3">
-      <img src="images/avo_rating_large.gif">
-      <img src="images/national_college_large.gif">
-    </div>
-    <h2 class="font-bold mt-2">Certificates & Credentials</h2>
-    <p class="text-sm">Protecting Virginians for over 30 years.</p>
-    <button class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center mx-auto">
-      Learn More <img src="images/bullet_white.gif">
-    </button>
-  </div>
-
-</section>
-
-<section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 text-sm">
-
-
-  <div>
-    <h2 class="font-bold text-lg mb-4">PRACTICE AREAS</h2>
-
-    <div class="space-y-2">
-      <div class="flex justify-between items-center border-b pb-2">
-        <span class="font-semibold">DUI & DWI</span>
-        <span class="text-red-700 font-bold flex items-center gap-1">
-          LEARN MORE <img src="images/bullet_red.gif">
-        </span>
+        <h2 class="font-bold">Case Results</h2>
+        <div class="flex justify-between">
+          <p class="text-sm">
+            See how we help our clients. Lorem ipsum dolor sit amet.
+          </p>
+          <img src="images/order_icon.gif" class="w-36" />
+        </div>
+        <button
+          class="mt-0 bg-red-700 text-white px-3 py-1 flex gap-2 items-center"
+        >
+          Click Here <img src="images/bullet_white.gif" />
+        </button>
       </div>
 
-      <div class="flex justify-between items-center border-b pb-2">
-        <span class="font-semibold">RECKLESS DRIVING</span>
-        <span class="text-red-700 font-bold flex items-center gap-1">
-          LEARN MORE <img src="images/bullet_red.gif">
-        </span>
+      <div class="bg-white p-4 shadow text-start">
+        <div class="flex justify-center gap-3">
+          <img src="images/avo_rating_large.gif" />
+          <img src="images/national_college_large.gif" />
+        </div>
+        <h2 class="font-bold text-2xl mt-2">
+          Certificates & <br /><span class="text-red-700">Credentials</span>
+        </h2>
+        <p class="text-sm">
+          Protecting Virginians for over 30 years. Lorem ipsum dolor sit amet
+          consectetur
+        </p>
+        <button
+          class="mt-3 bg-red-700 text-white px-3 py-1 flex gap-2 items-center mx-auto"
+        >
+          Learn More <img src="images/bullet_white.gif" />
+        </button>
+      </div>
+    </section>
+
+    <div class="bg-gray-100 px-8 py-8 flex flex-col lg:flex-row gap-8">
+      <div class="lg:w-1/4">
+        <h3 class="font-bold text-lg mb-3">
+          PRACTICE <span class="text-red-700">AREAS</span>
+        </h3>
+
+        <div class="space-y-3">
+          <div class="flex items-center bg-[#928f8f] text-white shadow">
+            <img src="./images/menu_bg.gif" class="h-17.5" />
+
+            <div class="flex justify-between items-center w-full px-4">
+              <span class="text-2xl font-semibold"> DUI & DWI </span>
+
+              <div class="flex items-center gap-1">
+                <span class="text-lg">Learn more</span>
+                <img src="./images/bullet_red.gif" class="w-3 h-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center bg-[#928f8f] text-white shadow">
+            <img src="./images/menu_bg.gif" class="h-17.5" />
+
+            <div class="flex justify-between items-center w-full px-4">
+              <span class="text-2xl font-semibold"> DUI & DWI </span>
+
+              <div class="flex items-center gap-1">
+                <span class="text-lg">Learn more</span>
+                <img src="./images/bullet_red.gif" class="w-3 h-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center bg-[#928f8f] text-white shadow">
+            <img src="./images/menu_bg.gif" class="h-17.5" />
+
+            <div class="flex justify-between items-center w-full px-4">
+              <span class="text-2xl font-semibold"> DUI & DWI </span>
+
+              <div class="flex items-center gap-1">
+                <span class="text-lg">Learn more</span>
+                <img src="./images/bullet_red.gif" class="w-3 h-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center bg-[#928f8f] text-white shadow">
+            <img src="./images/menu_bg.gif" class="h-17.5" />
+
+            <div class="flex justify-between items-center w-full px-4">
+              <span class="text-2xl font-semibold"> DUI & DWI </span>
+
+              <div class="flex items-center gap-1">
+                <span class="text-lg">Learn more</span>
+                <img src="./images/bullet_red.gif" class="w-3 h-3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-6">
+          LEARN <span class="text-red-700">MORE</span> ABOUT
+        </h4>
+
+        <p class="text-gray-500 ml-12 mt-3 leading-6">
+          MENU <br />
+          AREA<br />
+          HERE
+        </p>
       </div>
 
-      <div class="flex justify-between items-center border-b pb-2">
-        <span class="font-semibold">SPEEDING TICKETS</span>
-        <span class="text-red-700 font-bold flex items-center gap-1">
-          LEARN MORE <img src="images/bullet_red.gif">
-        </span>
+      <div class="lg:w-2/4">
+        <h1 class="font-bold text-xl mb-3">KEEFER'S LAW FIRM</h1>
+
+        <p class="leading-7 text-gray-800">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi
+          quas esse iure nostrum inventore ipsam, voluptas quos, quibusdam illum
+          id, culpa sunt eius delectus commodi tempore Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Quod earum in, repellat, id omnis
+          beatae magnam officiis eos atque ipsreiciendis rem, laudantium
+          corporis sequi quasi deleniti molestias! Dolor, iste?...
+        </p>
       </div>
 
-      <div class="flex justify-between items-center border-b pb-2">
-        <span class="font-semibold">TRAFFIC VIOLATIONS</span>
-        <span class="text-red-700 font-bold flex items-center gap-1">
-          LEARN MORE <img src="images/bullet_red.gif">
-        </span>
+      <div class="lg:w-1/4">
+        <div class="mb-10">
+          <h4 class="font-bold text-xl leading-6">
+            CLIENT <br />
+            <span class="text-red-700">TESTIMONIALS</span>
+          </h4>
+
+          <p class="mt-2 text-base leading-6">
+            Read what others say about Keefer Law Firm.
+          </p>
+
+          <div class="relative mt-4">
+            <div class="border-t border-gray-600 w-[80%] ml-4"></div>
+
+            <div class="flex justify-center">
+              <button
+                class="mt-0 bg-red-700 text-white px-6 py-2 flex items-center gap-2"
+              >
+                CLICK HERE
+                <img src="./images/bullet_white_lrg.png" class="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <h4 class="font-bold text-xl leading-6">
+            DOWNLOAD <br />
+            <span class="text-red-700">FREE</span> REPORTS
+          </h4>
+
+          <p class="mt-2 text-base leading-6">
+            Discover the truth about Virginia Law.
+          </p>
+
+          <div class="relative mt-4">
+            <div class="border-t border-gray-500 w-[80%] ml-4"></div>
+
+            <div class="flex justify-center">
+              <button
+                class="mt-0 bg-red-700 text-white px-6 py-2 flex items-center gap-2"
+              >
+                CLICK HERE
+                <img src="./images/bullet_white_lrg.png" class="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <h4 class="font-bold text-xl leading-6">
+            CONTACT <span class="text-red-700">OUR</span> <br />
+            OFFICES
+          </h4>
+
+          <p class="mt-2 text-base leading-6">
+            Get your questions answered right now.
+          </p>
+
+          <div class="relative mt-4">
+            <div class="border-t border-gray-500 w-[80%] ml-4"></div>
+
+            <div class="flex justify-center">
+              <button
+                class="mt-0 bg-red-700 text-white px-6 py-2 flex items-center gap-2"
+              >
+                CLICK HERE
+                <img src="./images/bullet_white_lrg.png" class="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6 mb-6">
+          <img src="./images/avo_rating_large.gif" class="w-36" />
+          <img src="./images/national_college_small.gif" class="w-36" />
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-2">FOLLOW US</h4>
+          <hr />
+          <br />
+          <div class="flex gap-2">
+            <img src="./images/fb_icon.gif" />
+            <img src="./images/google_icon.gif" />
+            <img src="./images/twitter_icon.gif" />
+            <img src="./images/linked_icon.gif" />
+          </div>
+        </div>
       </div>
     </div>
-
-    <h3 class="mt-6 font-bold">LEARN MORE ABOUT</h3>
-    <ul class="list-disc ml-5 text-xs mt-2">
-      <li>Menu</li>
-      <li>Area</li>
-      <li>Here</li>
-    </ul>
-  </div>
-
- 
-  <div>
-    <h1 class="text-xl font-bold mb-4">&lt;H1&gt; PAGE TITLE HERE</h1>
-    <p class="leading-relaxed text-sm">
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempore harum blanditiis accusantium amet velit accusamus optio quibusdam minus eos explicabo, ipsa culpa ea, ipsam impedit? Amet commodi quasi dignissimos obcaecati error laborum odio maxime nemo debitis suscipit ea, sed consectetur vitae, sequi nesciunt ducimus delectus minima illum? Deserunt!
-    </p>
-  </div>
-
- 
-  <div class="space-y-6">
-
-    <div class="border-b pb-4">
-      <h2 class="font-bold text-lg">
-        Client <span class="text-red-700">Testimonials</span>
-      </h2>
-      <p class="text-sm mt-2">
-        This is awesome text used in page and this is for practice.
-      </p>
-      <button class="mt-2 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-        Click Here <img src="images/bullet_white.gif">
-      </button>
-    </div>
-
-    <div class="border-b pb-4">
-      <h2 class="font-bold text-lg">
-        Download <span class="text-red-700">Free</span> Reports
-      </h2>
-      <p class="text-sm mt-2">
-        This is awesome text used in page and this is for practice.
-      </p>
-      <button class="mt-2 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-        Click Here <img src="images/bullet_white.gif">
-      </button>
-    </div>
-
-    <div>
-      <h2 class="font-bold text-lg">
-        Contact <span class="text-red-700">Our</span> Office
-      </h2>
-      <p class="text-sm mt-2">
-        This is awesome text used in page and this is for practice.
-      </p>
-      <button class="mt-2 bg-red-700 text-white px-3 py-1 flex gap-2 items-center">
-        Click Here <img src="images/bullet_white.gif">
-      </button>
-    </div>
-
-  </div>
-</section>
-<footer class="bg-white mt-10 border-t pt-6 pb-10 text-sm">
-  <div class="max-w-7xl mx-auto flex justify-between items-start">
-
-
-    <div class="flex gap-4">
-      <img src="images/qqq.gif">
-      <img src="images/national_college_small.gif">
-    </div>
-
-  
-    <div class="text-right">
-      <p class="font-bold mb-1">Follow Us</p>
-      <hr class="border-gray-400 w-24 ml-auto mb-3">
-
-      <div class="flex gap-3 justify-end">
-        <img src="images/fb_icon.gif">
-        <img src="images/google_icon.gif">
-        <img src="images/twitter_icon.gif">
-        <img src="images/linked_icon.gif">
-      </div>
-    </div>
-
-  </div>
-</footer>
-</body>
+  </body>
 </html>
