@@ -1,76 +1,75 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth ">
+<html lang="en" class="scroll-smooth">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio profile</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <script>
-    tailwind.config = {
-      darkMode: "class"
-    };
-  </script>
-</head>
-  <body id="top" class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio profile</title>
 
-        <header class="w-full bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <nav class="max-w-7xl mx-auto px-6 md:px-24 py-4 flex items-center justify-between">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    id="top"
+    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white"
+  >
+    <header
+      class="w-full bg-gray-100 dark:bg-gray-800 transition-colors duration-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 md:px-24 py-4 flex items-center justify-between"
+      >
+        <h2 class="text-xl font-semibold tracking-wide">SSC/</h2>
 
-    <h2 class="text-xl font-semibold tracking-wide">SSC/</h2>
+        <ul
+          id="mobileMenu"
+          class="hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-800 flex-col items-center gap-6 py-6 text-center shadow-md md:static md:flex md:flex-row md:justify-center md:w-auto md:bg-transparent md:py-0 md:shadow-none md:gap-8"
+        >
+          <li><a href="#" class="hover:text-black transition">About</a></li>
+          <li><a href="#" class="hover:text-black transition">Work</a></li>
+          <li>
+            <a href="#" class="hover:text-black transition">Testimonials</a>
+          </li>
+          <li><a href="#" class="hover:text-black transition">Contact</a></li>
 
-<ul id="mobileMenu"
-    class="hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-800
-            flex-col items-center gap-6 py-6 text-center shadow-md
+          <li>
+            <button class="p-2 rounded-full hover:bg-gray-100 transition">
+              <img
+                id="theme-toggle"
+                src="./images/light.png"
+                class="w-6 cursor-pointer"
+              />
+            </button>
+          </li>
 
-           md:static md:flex md:flex-row md:justify-center md:w-auto
-           md:bg-transparent md:py-0 md:shadow-none md:gap-8">
+          <li>
+            <a
+              href="#"
+              class="px-5 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition"
+            >
+              Download CV
+            </a>
+          </li>
+        </ul>
 
-
-      <li><a href="#" class="hover:text-black transition">About</a></li>
-      <li><a href="#" class="hover:text-black transition">Work</a></li>
-      <li><a href="#" class="hover:text-black transition">Testimonials</a></li>
-      <li><a href="#" class="hover:text-black transition">Contact</a></li>
-
-      <li>
-        <button class="p-2 rounded-full hover:bg-gray-100 transition">
-         <img id="theme-toggle" 
-     src="./images/light.png" 
-     class="w-6 cursor-pointer">
-
+        <button id="menuBtn" class="md:hidden flex flex-col gap-1">
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
         </button>
-      </li>
-
-      <li>
-        <a href="#" class="px-5 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition">
-          Download CV
-        </a>
-      </li>
-    </ul>
-
-    
-<button id="menuBtn" class="md:hidden flex flex-col gap-1">
-  <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
-  <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
-  <span class="w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
-</button>
-
-  </nav>
-</header>
+      </nav>
+    </header>
 
     <main class="max-w-6xl mx-auto mt-60 px-6">
-      
-    
-
       <div class="flex items-center justify-between gap-10">
-       
         <div class="max-w-xl">
           <h1 class="font-extrabold text-4xl mb-4">Hi, I'm Zahra 👋</h1>
 
-          <p class="text-gray-800 text-sm leading-relaxed dark:text-gray-300
-">
+          <p class="text-gray-800 text-sm leading-relaxed dark:text-gray-300">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating exceptional digital experiences that are fast, accessible,
             visually appealing, and responsive. Even though I have been creating
@@ -79,21 +78,25 @@
           </p>
         </div>
 
-        
-        <img class="h-52 rounded-lg  dark:text-gray-300" src="./images/profile.png" />
+        <img
+          class="h-52 rounded-lg dark:text-gray-300"
+          src="./images/profile.png"
+        />
       </div>
 
-      
-      <div class="flex items-center gap-2 mt-6 text-gray-600 dark:text-gray-400">
+      <div
+        class="flex items-center gap-2 mt-6 text-gray-600 dark:text-gray-400"
+      >
         <img src="./images/Icon.png" />
         <p>Mansehra, Pakistan</p>
       </div>
-      <div class="flex items-center gap-2 mt-6 text-gray-600 dark:text-gray-400">
+      <div
+        class="flex items-center gap-2 mt-6 text-gray-600 dark:text-gray-400"
+      >
         <img src="./images/Icon1.png" />
         <p>Availabe for new projects</p>
       </div>
 
-   
       <ul class="flex gap-4 mt-4">
         <li><img src="./images/Icon2.png" /></li>
         <li><img src="./images/Icon3.png" /></li>
@@ -101,11 +104,7 @@
       </ul>
     </main>
 
-
-
-    
-  <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
-
+    <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex justify-center mb-12">
           <h1
@@ -123,10 +122,8 @@
             />
           </div>
 
-          
           <div
-            class="max-w-xl space-y-5 text-gray-600 dark:text-gray-300
- text-xs leading-relaxed items-end"
+            class="max-w-xl space-y-5 text-gray-600 dark:text-gray-300 text-xs leading-relaxed items-end"
           >
             <h1 class="text-2xl font-semibold">
               Curious about me? Here you have it:
@@ -177,17 +174,16 @@
         </h1>
       </div>
 
-      <p class="text-center text-gray-600 mb-12  dark:text-gray-300">
+      <p class="text-center text-gray-600 mb-12 dark:text-gray-300">
         The skills, tools and technologies I am really good at:
       </p>
 
       <div
         class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-10 text-center"
       >
-
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-javscript.svg" />
-          <p class="text-sm text-gray-700  dark:text-gray-300">JavaScript</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">JavaScript</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -197,7 +193,7 @@
 
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-react.svg" />
-          <p class="text-sm text-gray-700 dark:text-gray-300  ">React</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">React</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -207,7 +203,7 @@
 
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-nodejs.svg" />
-          <p class="text-sm text-gray-700 dark:text-gray-300  ">Node.js</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Node.js</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -217,7 +213,7 @@
 
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-nest.svg" />
-          <p class="text-sm text-gray-700 dark:text-gray-300  ">NestJS</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">NestJS</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -227,7 +223,7 @@
 
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-postgresql.svg" />
-          <p class="text-sm text-gray-700 dark:text-gray-300  ">PostgreSQL</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">PostgreSQL</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -237,7 +233,7 @@
 
         <div class="flex flex-col items-center gap-3">
           <img class="h-20" src="./images/icon-sass.svg" />
-          <p class="text-sm text-gray-700 dark:text-gray-300  ">Sass</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Sass</p>
         </div>
 
         <div class="flex flex-col items-center gap-3">
@@ -268,8 +264,8 @@
     </section>
 
 
-    <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
 
+    <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
       <div class="max-w-5xl mx-auto px-6">
         <div class="flex justify-center mb-6">
           <h1
@@ -289,9 +285,11 @@
           <img class="h-full" src="./images/logo-upwork.png" />
 
           <div class="flex-1">
-            <h2 class="font-semibold text-lg mb-4 ">Sr. Frontend Developer</h2>
+            <h2 class="font-semibold text-lg mb-4">Sr. Frontend Developer</h2>
 
-            <ul class="list-disc list-outside text-gray-600 dark:text-gray-300  text-xs space-y-2">
+            <ul
+              class="list-disc list-outside text-gray-600 dark:text-gray-300 text-xs space-y-2"
+            >
               <li>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Quisquam.
@@ -311,20 +309,24 @@
             </ul>
           </div>
 
-          <div class="text-sm text-gray-500 whitespace-nowrap dark:text-gray-300">
+          <div
+            class="text-sm text-gray-500 whitespace-nowrap dark:text-gray-300"
+          >
             Nov 2021 - Present
           </div>
         </div>
 
         <div
-          class="bg-white rounded-xl shadow-2xl p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8  dark:bg-gray-800"
+          class="bg-white rounded-xl shadow-2xl p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8 dark:bg-gray-800"
         >
           <img class="h-full" src="./images/logo-upwork.png" />
 
           <div class="flex-1">
             <h2 class="font-semibold text-lg mb-4">Sr. Frontend Developer</h2>
 
-            <ul class="list-disc list-outside text-gray-600 text-xs space-y-2 dark:text-gray-300">
+            <ul
+              class="list-disc list-outside text-gray-600 text-xs space-y-2 dark:text-gray-300"
+            >
               <li>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Quisquam.
@@ -344,19 +346,23 @@
             </ul>
           </div>
 
-          <div class="text-sm text-gray-500 whitespace-nowrap dark:text-gray-300">
+          <div
+            class="text-sm text-gray-500 whitespace-nowrap dark:text-gray-300"
+          >
             July 2017-Oct 2021
           </div>
         </div>
         <div
-          class="bg-white rounded-xl shadow-2xl p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8  dark:bg-gray-800"
+          class="bg-white rounded-xl shadow-2xl p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8 dark:bg-gray-800"
         >
           <img class="h-full" src="./images/logo-upwork.png" />
 
           <div class="flex-1">
             <h2 class="font-semibold text-lg mb-4">Full Stack Developer</h2>
 
-            <ul class="list-disc list-outside text-gray-600 text-xs space-y-2  dark:text-gray-300">
+            <ul
+              class="list-disc list-outside text-gray-600 text-xs space-y-2 dark:text-gray-300"
+            >
               <li>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. ipsum
                 dolor sit amet.
@@ -364,331 +370,429 @@
             </ul>
           </div>
 
-          <div class="text-sm text-gray-500 whitespace-nowrap  dark:text-gray-300">
+          <div
+            class="text-sm text-gray-500 whitespace-nowrap dark:text-gray-300"
+          >
             Dec 2015 May-2017
           </div>
         </div>
       </div>
     </section>
 
-  <section class="bg-gray-100 dark:bg-gray-900 py-16 mt-36">
-  <div class="max-w-6xl mx-auto px-6">
-
-    
-
-    <div class="flex justify-center mb-6 ">
-    <h1 
-          class="bg-gray-300 text-gray-800 px-6 py-2 rounded-2xl font-semibold dark:bg-gray-700 dark:text-gray-200">
-        
-        Work
-    </h1>
-    </div>
-
-    <p class="text-center text-gray-600 dark:text-gray-300 mb-16">
-      Lorem ipsum dolor sit amet consectetur adipisicing.
-    </p>
-
-
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16">
-
-
-      <div class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16">
-        <img src="./images/Picture.png" class="max-h-80 object-contain" />
-      </div>
-
-      <div class="md:w-1/2 p-12 flex flex-col justify-center">
-
-        <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
-
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Blanditiis incidunt architecto vel fugit unde! Doloremque aut
-          recusandae quod delectus libero necessitatibus.
-        </p>
-
-    
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">React</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Next.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Typescript</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Nest.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">PostgreSQL</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Tailwindcss</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Figma</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Cypress</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Storybook</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Git</span>
+    <section class="bg-gray-100 dark:bg-gray-900 py-16 mt-36">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex justify-center mb-6">
+          <h1
+            class="bg-gray-300 text-gray-800 px-6 py-2 rounded-2xl font-semibold dark:bg-gray-700 dark:text-gray-200"
+          >
+            Work
+          </h1>
         </div>
 
-        <a href="#top">
-          <img src="./images/Icon Button.png"
-               class="w-10 h-10 cursor-pointer hover:scale-110 transition" />
-        </a>
-
-      </div>
-    </div>
-
-  
-     <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16">
-
-
-      <div class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16">
-        <img src="./images/Picture.png" class="max-h-80 object-contain" />
-      </div>
-
-      <div class="md:w-1/2 p-12 flex flex-col justify-center">
-
-        <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
-
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Blanditiis incidunt architecto vel fugit unde! Doloremque aut
-          recusandae quod delectus libero necessitatibus.
+        <p class="text-center text-gray-600 dark:text-gray-300 mb-16">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
         </p>
 
-    
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">React</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Next.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Typescript</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Nest.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">PostgreSQL</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Tailwindcss</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Figma</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Cypress</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Storybook</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Git</span>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16"
+        >
+          <div
+            class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16"
+          >
+            <img src="./images/Picture.png" class="max-h-80 object-contain" />
+          </div>
+
+          <div class="md:w-1/2 p-12 flex flex-col justify-center">
+            <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
+
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis incidunt architecto vel fugit unde! Doloremque aut
+              recusandae quod delectus libero necessitatibus.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >React</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Next.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Typescript</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Nest.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >PostgreSQL</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Tailwindcss</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Figma</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Cypress</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Storybook</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Git</span
+              >
+            </div>
+
+            <a href="#top">
+              <img
+                src="./images/Icon Button.png"
+                class="w-10 h-10 cursor-pointer hover:scale-110 transition"
+              />
+            </a>
+          </div>
         </div>
 
-        <a href="#top">
-          <img src="./images/Icon Button.png"
-               class="w-10 h-10 cursor-pointer hover:scale-110 transition" />
-        </a>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16"
+        >
+          <div
+            class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16"
+          >
+            <img src="./images/Picture.png" class="max-h-80 object-contain" />
+          </div>
 
-      </div>
-    </div>
+          <div class="md:w-1/2 p-12 flex flex-col justify-center">
+            <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
 
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16">
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis incidunt architecto vel fugit unde! Doloremque aut
+              recusandae quod delectus libero necessitatibus.
+            </p>
 
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >React</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Next.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Typescript</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Nest.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >PostgreSQL</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Tailwindcss</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Figma</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Cypress</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Storybook</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Git</span
+              >
+            </div>
 
-      <div class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16">
-        <img src="./images/Picture.png" class="max-h-80 object-contain" />
-      </div>
-
-      <div class="md:w-1/2 p-12 flex flex-col justify-center">
-
-        <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
-
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Blanditiis incidunt architecto vel fugit unde! Doloremque aut
-          recusandae quod delectus libero necessitatibus.
-        </p>
-
-    
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">React</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Next.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Typescript</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Nest.js</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">PostgreSQL</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Tailwindcss</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Figma</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Cypress</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Storybook</span>
-          <span class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold">Git</span>
+            <a href="#top">
+              <img
+                src="./images/Icon Button.png"
+                class="w-10 h-10 cursor-pointer hover:scale-110 transition"
+              />
+            </a>
+          </div>
         </div>
 
-        <a href="#top">
-          <img src="./images/Icon Button.png"
-               class="w-10 h-10 cursor-pointer hover:scale-110 transition" />
-        </a>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col md:flex-row mb-16"
+        >
+          <div
+            class="md:w-1/2 bg-gray-100 dark:bg-gray-800 flex items-center justify-center p-16"
+          >
+            <img src="./images/Picture.png" class="max-h-80 object-contain" />
+          </div>
 
+          <div class="md:w-1/2 p-12 flex flex-col justify-center">
+            <h2 class="text-xl font-semibold mb-4">Fiskil</h2>
+
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis incidunt architecto vel fugit unde! Doloremque aut
+              recusandae quod delectus libero necessitatibus.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >React</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Next.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Typescript</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Nest.js</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >PostgreSQL</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Tailwindcss</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Figma</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Cypress</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Storybook</span
+              >
+              <span
+                class="bg-gray-200 text-black px-4 py-1 rounded-xl text-xs font-semibold"
+                >Git</span
+              >
+            </div>
+
+            <a href="#top">
+              <img
+                src="./images/Icon Button.png"
+                class="w-10 h-10 cursor-pointer hover:scale-110 transition"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex justify-center mb-6">
+          <h1
+            class="bg-gray-200 text-gray-800 px-6 py-2 rounded-2xl font-semibold"
+          >
+            Testimonials
+          </h1>
+        </div>
 
-
-
-
-
-
- <section class="bg-gray-100 dark:bg-gray-800 py-16 mt-36">
-  <div class="max-w-6xl mx-auto px-6">
-
-   
-    <div class="flex justify-center mb-6">
-      <h1 class="bg-gray-200 text-gray-800 px-6 py-2 rounded-2xl font-semibold">
-        Testimonials
-      </h1>
-    </div>
-
- 
-    <p class="text-center text-gray-600 dark:text-gray-300 mb-16">
-      Nice things people say about me and my work.
-    </p>
-
-   
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-   
-      <div class="bg-white dark:bg-gray-800
- rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300">
-
-        <img src="./images/icon-user.png"
-             class=" mx-auto rounded-full mb-6" />
-
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+        <p class="text-center text-gray-600 dark:text-gray-300 mb-16">
+          Nice things people say about me and my work.
         </p>
 
-        <h3 class="font-semibold text-gray-900 dark:text-gray-300">John Doe</h3>
-        <p class="text-gray-500 dark:text-gray-300 text-xs">CEO at Company</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./images/icon-user.png"
+              class="mx-auto rounded-full mb-6"
+            />
 
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+            </p>
+
+            <h3 class="font-semibold text-gray-900 dark:text-gray-300">
+              John Doe
+            </h3>
+            <p class="text-gray-500 dark:text-gray-300 text-xs">
+              CEO at Company
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./images/icon-user.png"
+              class="mx-auto rounded-full mb-6"
+            />
+
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              “Working with Zahra was an absolute pleasure. Professional, fast,
+              and very detail oriented.”
+            </p>
+
+            <h3 class="font-semibold text-gray-900 dark:text-gray-300">
+              Sarah Smith
+            </h3>
+            <p class="text-gray-500 dark:text-gray-300 text-xs">
+              Product Manager
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./images/icon-user.png"
+              class="mx-auto rounded-full mb-6"
+            />
+
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6"
+            >
+              “Highly recommend! Clean code, great communication, and delivered
+              exactly what was needed.”
+            </p>
+
+            <h3 class="font-semibold text-gray-900 dark:text-gray-300">
+              Michael Lee
+            </h3>
+            <p class="text-gray-500 text-xs dark:text-gray-300">
+              Startup Founder
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      
-      <div class="bg-white dark:bg-gray-800
- rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300">
+    <section class="bg-gray-100 dark:bg-gray-900 py-16 mt-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="flex justify-center mb-2">
+          <h1
+            class="bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-white px-6 py-2 rounded-2xl font-medium"
+          >
+            Contact
+          </h1>
+        </div>
 
-        <img src="./images/icon-user.png"
-             class=" mx-auto rounded-full mb-6" />
-
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          “Working with Zahra was an absolute pleasure.
-          Professional, fast, and very detail oriented.”
+        <p
+          class="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base max-w-2xl mx-auto"
+        >
+          What's next? Feel free to reach out to me if you're looking for a
+          developer, have a query, or simply want to connect.
         </p>
 
-        <h3 class="font-semibold text-gray-900 dark:text-gray-300">Sarah Smith</h3>
-        <p class="text-gray-500  dark:text-gray-300 text-xs">Product Manager</p>
+        <div class="flex items-center justify-center gap-4">
+          <img src="./images/email.png" />
 
-      </div>
+          <a
+            href="mailto:zahrashah10001@email.com"
+            class="text-gray-900 dark:text-gray-300"
+          >
+            zahrashah10001@email.com
+          </a>
 
-  
-      <div class="bg-white dark:bg-gray-800
- rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition duration-300">
+          <img
+            src="./images/box.png"
+            class="cursor-pointer hover:opacity-70 transition"
+          />
+        </div>
 
-        <img src="./images/icon-user.png"
-             class=" mx-auto rounded-full mb-6" />
+        <div class="flex items-center justify-center gap-4 mb-9">
+          <img src="./images/mob.png" />
 
-        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-          “Highly recommend! Clean code, great communication,
-          and delivered exactly what was needed.”
+          <a href="tel:+923001234567" class="text-gray-600 dark:text-gray-300">
+            +92 300 1234567
+          </a>
+
+          <img
+            src="./images/box.png"
+            class="cursor-pointer hover:opacity-70 transition"
+          />
+        </div>
+
+        <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm">
+          You may also find me on these platforms
         </p>
 
-        <h3 class="font-semibold text-gray-900 dark:text-gray-300">Michael Lee</h3>
-        <p class="text-gray-500 text-xs dark:text-gray-300">Startup Founder</p>
+        <div class="flex justify-center gap-8 mb-5">
+          <a href="#">
+            <img src="./images/Icon2.png" class="hover:scale-110 transition" />
+          </a>
 
+          <a href="#">
+            <img src="./images/Icon3.png" class="hover:scale-110 transition" />
+          </a>
+
+          <a href="#">
+            <img src="./images/Icon4.png" class="hover:scale-110 transition" />
+          </a>
+        </div>
+
+        <p class="text-sm text-gray-600 dark:text-gray-300">
+          © 2024 | Designed and coded with ❤️ by Zahra Shah
+        </p>
       </div>
+    </section>
 
-    </div>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
 
-  </div>
-</section>
+      // Start in light mode
+      html.classList.remove("dark");
+      toggleBtn.src = "./images/light.png";
 
+      toggleBtn.addEventListener("click", () => {
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
+          toggleBtn.src = "./images/light.png";
+        } else {
+          html.classList.add("dark");
+          toggleBtn.src = "./images/light.png";
+        }
+      });
 
- <section class="bg-gray-100 dark:bg-gray-900 py-16 mt-16">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-
-   
-    <div class="flex justify-center mb-2">
-      <h1 class="bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-white  px-6 py-2 rounded-2xl font-medium">
-        Contact
-      </h1>
-    </div>
-
-    <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base max-w-2xl mx-auto">
-      What's next? Feel free to reach out to me if you're looking for a developer,
-      have a query, or simply want to connect.
-    </p>
-
- 
-    <div class="flex items-center justify-center gap-4">
-      <img src="./images/email.png" />
-
-      <a href="mailto:zahrashah10001@email.com"
-         class=" text-gray-900 dark:text-gray-300">
-        zahrashah10001@email.com
-      </a>
-
-      <img src="./images/box.png" class="cursor-pointer hover:opacity-70 transition" />
-    </div>
-
-    <div class="flex items-center justify-center gap-4 mb-9">
-      <img src="./images/mob.png"  />
-
-      <a href="tel:+923001234567"
-         class=" text-gray-600 dark:text-gray-300">
-        +92 300 1234567
-      </a>
-
-      <img src="./images/box.png" class="cursor-pointer hover:opacity-70 transition" />
-    </div>
-
-  
-    <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm">
-      You may also find me on these platforms
-    </p>
-
-    
-    <div class="flex justify-center gap-8 mb-5">
-      <a href="#">
-        <img src="./images/Icon2.png"
-             class="hover:scale-110 transition" />
-      </a>
-
-      <a href="#">
-        <img src="./images/Icon3.png"
-             class="hover:scale-110 transition" />
-      </a>
-
-      <a href="#">
-        <img src="./images/Icon4.png"
-             class="hover:scale-110 transition" />
-      </a>
-    </div>
-
-   
-  
-<p class="text-sm text-gray-600 dark:text-gray-300">
-   © 2024 | Designed and coded with ❤️ by Zahra Shah
-</p>
-
-
-  </div>
-</section>
-
-
-
-<script>
-const toggleBtn = document.getElementById("theme-toggle");
-const html = document.documentElement;
-
-// Start in light mode
-html.classList.remove("dark");
-toggleBtn.src = "./images/light.png";
-
-toggleBtn.addEventListener("click", () => {
-  if (html.classList.contains("dark")) {
-    html.classList.remove("dark");
-    toggleBtn.src = "./images/light.png";
-  } else {
-    html.classList.add("dark");
-    toggleBtn.src = "./images/light.png";
-  }
-});
-
-// Mobile menu
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-  mobileMenu.classList.toggle("flex");
-});
-</script>
-
+      // Mobile menu keliye
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+      });
+    </script>
   </body>
 </html>
