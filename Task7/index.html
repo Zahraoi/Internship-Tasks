@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converters & Functions App</title>
+    <link href="style.css" rel="stylesheet">
+   
+    
+</head>
+<body>
+    <div class="container">
+        <h1> <3 Dashboard <3 </h1>
+        
+        <div class="grid">
+            <!--  Age to Days Converter -->
+            <div class="card">
+                <h2>1. Age to Days Converter</h2>
+                <div class="input-group">
+
+                    <label for="birthdate">Select Your Birthdate:</label>
+                    <input type="date" id="birthdate" max="">
+                </div>
+                <button onclick="convertAgeToDays()">Convert to Days</button>
+                <div class="result" id="ageResult">Result will appear here...</div>
+            </div>
+
+            <!-- 2. Hours to Seconds Converter -->
+            <div class="card">
+                <h2>2. Hours to Seconds Converter</h2>
+                <div class="input-group">
+                    <label for="hours">Enter Hours:</label>
+                    <input type="number" id="hours" placeholder="e.g., 5" step="0.01">
+                </div>
+                <button onclick="convertHoursToSeconds()">Convert to Seconds</button>
+                <div class="result" id="hoursResult">Result will appear here...</div>
+            </div>
+
+            <!-- 3. Find Next Number -->
+            <div class="card">
+                <h2>3. Find Next Number</h2>
+                <div class="input-group">
+                    <label>Choose Scenario:</label>
+                    <select id="nextNumScenario" onchange="toggleNextNumScenario()" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px;">
+                        <option value="array">Find in Array</option>
+                        <option value="single">Single Value (Integer/Float)</option>
+                    </select>
+                </div>
+                
+                <div id="arrayScenario">
+                    <div class="input-group">
+                        <label for="arrayInput">Enter Array (comma Separated okay(,)):</label>
+                        <input type="text" id="arrayInput" placeholder="e.g., 5, 10, 15, 20, 25">
+                    </div>
+                    <div class="input-group">
+                        <label for="targetNum">Target Number:</label>
+                        <input type="number" id="targetNum" placeholder="e.g., 15">
+                    </div>
+                    <button onclick="findNextInArray()">Find Next Number</button>
+                </div>
+
+                <div id="singleScenario" style="display: none;">
+                    <div class="input-group">
+                        <label for="singleNum">Enter a Number:</label>
+                        <input type="text" id="singleNum" placeholder="e.g., 5 or 5.5">
+                    </div>
+                    <button onclick="findNextNumber()">Find Next Number</button>
+                </div>
+                
+                <div class="result" id="nextNumResult">Result will appear here...</div>
+            </div>
+
+            <!-- 4. Name Capitalizer -->
+            <div class="card">
+                <h2>4. Name Capitalizer</h2>
+                <div class="input-group">
+                    <label for="nameInput">Enter Your Name (lowercase):</label>
+                    <input type="text" id="nameInput" placeholder="e.g., john doe">
+                </div>
+                <button onclick="capitalizeName()">Capitalize Name</button>
+                <div class="result" id="nameResult">Result will appear here...</div>
+                <div class="note">Note: Please enter name in lowercase only</div>
+            </div>
+
+            <!-- 5. BMI Calculator -->
+            <div class="card">
+                <h2>5. BMI Calculator</h2>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="e.g., 70" step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (meters):</label>
+                    <input type="number" id="height" placeholder="e.g., 1.75" step="0.01">
+                </div>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <div class="result" id="bmiResult">Result will appear here...</div>
+            </div>
+
+            <!-- 6. Random Array First & Last -->
+            <div class="card">
+                <h2>6. Random Array - First & Last Element</h2>
+                <div class="input-group">
+                    <label for="arraySize">Array Size:</label>
+                    <input type="number" id="arraySize" placeholder="e.g., 10" min="2" value="10">
+                </div>
+                <button onclick="generateAndPickElements()">Generate & Pick Elements</button>
+                <div class="array-display" id="generatedArray">Array will appear here...</div>
+                <div class="result" id="arrayResult">Result will appear here...</div>
+            </div>
+
+            <!-- 7. Three Textbox Addition -->
+            <div class="card">
+                <h2>7. Three Textbox Addition</h2>
+                <div class="three-textbox">
+                    <div class="input-group">
+                        <label for="num1">First Number:</label>
+                        <input type="number" id="num1" placeholder="Enter number" oninput="calculateSum()">
+                    </div>
+                    <div class="operator">+</div>
+                    <div class="input-group">
+                        <label for="num2">Second Number:</label>
+                        <input type="number" id="num2" placeholder="Enter number" oninput="calculateSum()">
+                    </div>
+                    <div class="operator">=</div>
+                    <div class="input-group">
+                        <label for="sum">Result:</label>
+                        <input type="text" id="sum" placeholder="Result" readonly style="background: #f0f4ff; font-weight: bold;">
+                    </div>
+                </div>
+                <div class="note">The result will show sabar until both numbers are entered</div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
