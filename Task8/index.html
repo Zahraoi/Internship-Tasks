@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks :)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-50 text-purple-950 font-sans min-h-screen">
+
+<div class="max-w-2xl mx-auto px-4 py-8">
+
+  <!-- Header -->
+  <div class="mb-8">
+    <h1 class="text-2xl font-semibold tracking-tight text-center text-purple-900">JavaScript Tasks <span class="text-pink-400">(practice)</span></h1>
+  </div>
+
+  <!-- Navigation barr -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    <button id="nav-carousel" onclick="showSection('carousel')" class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border bg-purple-500 text-white border-purple-500 font-bold transition-all">Carousel</button>
+    <button id="nav-calc"     onclick="showSection('calc')"     class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border border-purple-300 text-purple-400 bg-white hover:border-purple-500 hover:text-pink-400 transition-all">Calculator</button>
+    <button id="nav-clock"    onclick="showSection('clock')"    class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border border-purple-300 text-purple-400 bg-white hover:border-purple-500 hover:text-pink-400 transition-all">Clock</button>
+    <button id="nav-temp"     onclick="showSection('temp')"     class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border border-purple-300 text-purple-400 bg-white hover:border-purple-500 hover:text-pink-400 transition-all">Temp Converter</button>
+    <button id="nav-pass"     onclick="showSection('pass')"     class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border border-purple-300 text-purple-400 bg-white hover:border-purple-500 hover:text-pink-400 transition-all">Password Gen</button>
+    <button id="nav-todo"     onclick="showSection('todo')"     class="font-mono text-xs tracking-widest uppercase px-4 py-2 rounded-sm border border-purple-300 text-purple-400 bg-white hover:border-purple-500 hover:text-pink-400 transition-all">To-Do List</button>
+  </div>
+
+
+
+
+  <!--  TASK 1: CAROUSEL  -->
+  <div id="section-carousel">
+    <div class="bg-white border border-purple-200 rounded-xl p-5 shadow-sm">
+      <p class="font-mono text-xs tracking-widest text-purple-400 mb-4">01:  CAROUSEL SLIDER</p>
+
+      <div class="relative w-full overflow-hidden rounded-lg shadow">
+        <div class="flex transition-transform duration-500 ease-in-out" id="slides">
+          <div class="min-w-full h-64 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/800/400');"></div>
+          <div class="min-w-full h-64 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1025/800/400');"></div>
+          <div class="min-w-full h-64 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1035/800/400');"></div>
+          <div class="min-w-full h-64 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1045/800/400');"></div>
+        </div>
+        <button id="prev" class="absolute top-1/2 -translate-y-1/2 left-3 bg-purple-500/70 text-white p-2.5 rounded-full hover:bg-purple-600 transition">&#10094;</button>
+        <button id="next" class="absolute top-1/2 -translate-y-1/2 right-3 bg-purple-500/70 text-white p-2.5 rounded-full hover:bg-purple-600 transition">&#10095;</button>
+      </div>
+
+      <div class="mt-4 text-sm font-medium text-center text-purple-700" id="slide-info">Slide 1: Beautiful Nature</div>
+
+      <div class="flex justify-center mt-3 gap-3">
+        <img src="https://picsum.photos/id/1015/80/60" onclick="goToSlide(0)" id="thumb0" class="w-20 h-14 object-cover cursor-pointer rounded border-2 border-purple-500 transition">
+        <img src="https://picsum.photos/id/1025/80/60" onclick="goToSlide(1)" id="thumb1" class="w-20 h-14 object-cover cursor-pointer rounded border-2 border-transparent hover:border-purple-400 transition">
+        <img src="https://picsum.photos/id/1035/80/60" onclick="goToSlide(2)" id="thumb2" class="w-20 h-14 object-cover cursor-pointer rounded border-2 border-transparent hover:border-purple-400 transition">
+        <img src="https://picsum.photos/id/1045/80/60" onclick="goToSlide(3)" id="thumb3" class="w-20 h-14 object-cover cursor-pointer rounded border-2 border-transparent hover:border-purple-400 transition">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--   TASK 2: CALCULATOR  -->
+  <div id="section-calc" class="hidden">
+    <div class="bg-white border border-purple-200 rounded-xl p-5 max-w-xs mx-auto shadow-sm">
+      <p class="font-mono text-xs tracking-widest text-purple-400 mb-4">02: CALCULATOR</p>
+      <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-3 text-right">
+        <div class="font-mono text-xs text-purple-300 min-h-4 mb-1" id="calc-expr">&nbsp;</div>
+        <div class="font-mono text-3xl font-bold text-purple-900" id="calc-screen">0</div>
+      </div>
+      <div class="grid grid-cols-4 gap-1.5">
+        <button onclick="calcClear()"     class="col-span-2 bg-pink-50 border border-pink-200 text-pink-500 font-mono text-sm rounded-lg py-3 hover:bg-pink-100 active:scale-95 transition-all">C</button>
+        <button onclick="calcBackspace()" class="bg-purple-50 border border-purple-200 text-purple-500 font-mono text-sm rounded-lg py-3 hover:bg-purple-100 active:scale-95 transition-all">⌫</button>
+        <button onclick="calcOp('/')"     class="bg-purple-50 border border-purple-200 text-purple-500 font-mono text-sm rounded-lg py-3 hover:bg-purple-100 active:scale-95 transition-all">÷</button>
+
+        <button onclick="calcNum('7')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">7</button>
+        <button onclick="calcNum('8')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">8</button>
+        <button onclick="calcNum('9')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">9</button>
+        <button onclick="calcOp('*')"  class="bg-purple-50 border border-purple-200 text-purple-500 font-mono text-sm rounded-lg py-3 hover:bg-purple-100 active:scale-95 transition-all">×</button>
+
+        <button onclick="calcNum('4')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">4</button>
+        <button onclick="calcNum('5')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">5</button>
+        <button onclick="calcNum('6')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">6</button>
+        <button onclick="calcOp('-')"  class="bg-purple-50 border border-purple-200 text-purple-500 font-mono text-sm rounded-lg py-3 hover:bg-purple-100 active:scale-95 transition-all">−</button>
+
+        <button onclick="calcNum('1')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">1</button>
+        <button onclick="calcNum('2')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">2</button>
+        <button onclick="calcNum('3')" class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">3</button>
+        <button onclick="calcOp('+')"  class="bg-purple-50 border border-purple-200 text-purple-500 font-mono text-sm rounded-lg py-3 hover:bg-purple-100 active:scale-95 transition-all">+</button>
+
+        <button onclick="calcNum('0')"  class="col-span-2 bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">0</button>
+        <button onclick="calcDot()"     class="bg-white border border-purple-200 text-purple-900 font-mono text-sm rounded-lg py-3 hover:bg-purple-50 active:scale-95 transition-all">.</button>
+        <button onclick="calcEquals()"  class="bg-purple-500 border border-purple-500 text-white font-mono font-bold text-sm rounded-lg py-3 hover:bg-purple-600 active:scale-95 transition-all">=</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--  TASK 3: DIGITAL CLOCK  -->
+  <div id="section-clock" class="hidden">
+    <div class="bg-white border border-purple-200 rounded-xl p-8 shadow-sm">
+      <p class="font-mono text-xs tracking-widest text-purple-400 mb-8">03:  DIGITAL CLOCK</p>
+      <div class="flex items-end justify-center gap-4 mb-6">
+        <div class="text-center">
+          <div class="font-mono text-6xl font-bold text-purple-600" id="clock-h">00</div>
+          <div class="font-mono text-xs tracking-widest text-purple-300 uppercase mt-1">Hours</div>
+        </div>
+        <div class="font-mono text-5xl text-pink-400 opacity-60 pb-6">:</div>
+        <div class="text-center">
+          <div class="font-mono text-6xl font-bold text-purple-600" id="clock-m">00</div>
+          <div class="font-mono text-xs tracking-widest text-purple-300 uppercase mt-1">Minutes</div>
+        </div>
+        <div class="font-mono text-5xl text-pink-400 opacity-60 pb-6">:</div>
+        <div class="text-center">
+          <div class="font-mono text-6xl font-bold text-pink-400" id="clock-s">00</div>
+          <div class="font-mono text-xs tracking-widest text-purple-300 uppercase mt-1">Seconds</div>
+        </div>
+      </div>
+      <p class="font-mono text-xs tracking-widest text-purple-400 text-center" id="clock-date"></p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- TASK 4: TEMPERATURE CONVERTER  -->
+  <div id="section-temp" class="hidden">
+    <div class="bg-white border border-purple-200 rounded-xl p-6 shadow-sm">
+      <p class="font-mono text-xs tracking-widest text-purple-400 mb-6">04:  TEMPERATURE CONVERTER</p>
+      <div class="flex items-center gap-3">
+        <div class="flex-1">
+          <label class="font-mono text-xs tracking-widest text-purple-400 block mb-2" id="label-left">CELSIUS (°C)</label>
+          <input type="number" id="temp-left" oninput="convertTemp('left')" placeholder="0"
+            class="w-full bg-purple-50 border border-purple-200 text-purple-700 font-mono text-2xl text-center rounded-lg py-3 px-3 outline-none focus:border-purple-500 transition-colors" />
+        </div>
+        <button onclick="swapTemp()" title="Swap"
+          class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-purple-50 border border-purple-200 text-purple-500 rounded-full text-lg hover:bg-purple-500 hover:text-white transition-all mt-6">⇄</button>
+        <div class="flex-1">
+          <label class="font-mono text-xs tracking-widest text-purple-400 block mb-2" id="label-right">FAHRENHEIT (°F)</label>
+          <input type="number" id="temp-right" oninput="convertTemp('right')" placeholder="32"
+            class="w-full bg-purple-50 border border-purple-200 text-purple-700 font-mono text-2xl text-center rounded-lg py-3 px-3 outline-none focus:border-purple-500 transition-colors" />
+        </div>
+      </div>
+      <div class="mt-5 bg-purple-50 border border-purple-100 rounded-lg p-4">
+        <p class="font-mono text-xs text-center text-purple-400" id="temp-formula">Formula: °F = (°C × 9/5) + 32</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--  TASK 5: PASSWORD GENERATOR  -->
+  <div id="section-pass" class="hidden">
+    <div class="bg-white border border-purple-200 rounded-xl p-6 shadow-sm">
+      <p class="font-mono text-xs tracking-widest text-purple-400 mb-5">05: PASSWORD GENERATOR</p>
+
+      <div class="mb-4">
+        <label class="font-mono text-xs tracking-widest text-purple-400 block mb-2">YOUR OWN PASSWORD (optional)</label>
+        <div class="flex gap-2">
+          <input type="text" id="custom-pass-input" placeholder="Type your own password here…"
+            class="flex-1 bg-purple-50 border border-purple-200 text-purple-800 font-mono text-sm rounded-lg py-2.5 px-4 outline-none focus:border-purple-500 transition-colors placeholder-purple-300" />
+          <button onclick="useCustomPassword()" class="bg-pink-400 text-white font-mono font-bold text-xs tracking-widest uppercase rounded-lg px-4 hover:bg-pink-500 transition-colors">Use</button>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="flex-1 h-px bg-purple-100"></div>
+        <span class="font-mono text-xs text-purple-300 tracking-widest">OR GENERATE</span>
+        <div class="flex-1 h-px bg-purple-100"></div>
+      </div>
+
+      
+      <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4 font-mono text-sm text-purple-700 break-all min-h-14 flex items-center" id="pass-output">
+        Click "Generate" to create a password
+      </div>
+
+      <div class="flex gap-2 mb-5">
+        <button onclick="generatePassword()" class="flex-1 bg-purple-500 text-white font-mono font-bold text-xs tracking-widest uppercase rounded-lg py-2.5 hover:bg-purple-600 transition-colors">Generate</button>
+        <button onclick="copyPassword()" id="copy-btn" class="bg-transparent border border-purple-200 text-purple-400 font-mono text-xs tracking-widest uppercase rounded-lg px-5 hover:border-purple-500 hover:text-purple-600 transition-all">Copy</button>
+      </div>
+
+      <div class="mb-5">
+        <div class="flex justify-between mb-2">
+          <span class="font-mono text-xs text-purple-400">LENGTH</span>
+          <span class="font-mono text-xs text-purple-600 font-bold" id="pass-len-val">16</span>
+        </div>
+        <!-- range wala aa jaye ga -->
+        <input type="range" min="8" max="64" value="16" id="pass-length"
+          oninput="document.getElementById('pass-len-val').textContent=this.value"
+          class="w-full accent-purple-500 cursor-pointer" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mb-5">
+        <label class="flex items-center gap-2 cursor-pointer text-sm text-purple-700"><input type="checkbox" id="inc-upper"   checked class="accent-purple-500 w-4 h-4" /> Uppercase (A–Z)</label>
+        <label class="flex items-center gap-2 cursor-pointer text-sm text-purple-700"><input type="checkbox" id="inc-lower"   checked class="accent-purple-500 w-4 h-4" /> Lowercase (a–z)</label>
+        <label class="flex items-center gap-2 cursor-pointer text-sm text-purple-700"><input type="checkbox" id="inc-num"     checked class="accent-purple-500 w-4 h-4" /> Numbers (0–9)</label>
+        <label class="flex items-center gap-2 cursor-pointer text-sm text-purple-700"><input type="checkbox" id="inc-special"        class="accent-purple-500 w-4 h-4" /> Special (!@#$…)</label>
+      </div>
+
+      <div class="flex gap-1 mb-1">
+        <div class="h-1.5 flex-1 rounded bg-purple-100" id="sb1"></div>
+        <div class="h-1.5 flex-1 rounded bg-purple-100" id="sb2"></div>
+        <div class="h-1.5 flex-1 rounded bg-purple-100" id="sb3"></div>
+        <div class="h-1.5 flex-1 rounded bg-purple-100" id="sb4"></div>
+      </div>
+      <p class="font-mono text-xs text-right text-purple-400" id="pass-strength-label">Strength: —</p>
+    </div>
+  </div>
+
+
+  
+
+  <!-- BONUS: TO-DO LIST  -->
+  <div id="section-todo" class="hidden">
+    <div class="bg-white border border-purple-200 rounded-xl p-6 shadow-sm">
+      <div class="flex items-center justify-between mb-5">
+        <p class="font-mono text-xs tracking-widest text-purple-400">BONUS / TO-DO LIST</p>
+        <span class="font-mono text-xs text-pink-400 font-bold" id="todo-count"></span>
+      </div>
+      <div class="flex gap-2 mb-5">
+        <input type="text" id="todo-input" placeholder="Add a new task…"
+          onkeydown="if(event.key==='Enter') addTodo()"
+          class="flex-1 bg-purple-50 border border-purple-200 text-purple-900 text-sm rounded-lg py-2.5 px-4 outline-none focus:border-purple-500 transition-colors placeholder-purple-300" />
+        <button onclick="addTodo()" class="bg-purple-500 text-white font-mono font-bold text-xs tracking-widest uppercase rounded-lg px-5 hover:bg-purple-600 transition-colors">Add</button>
+      </div>
+      <div class="flex items-center gap-1 mb-4">
+        <button id="filter-all"    onclick="setFilter('all')"    class="font-mono text-xs tracking-widest uppercase px-3 py-1.5 rounded-sm border border-purple-500 text-purple-500 transition-all">All</button>
+        <button id="filter-active" onclick="setFilter('active')" class="font-mono text-xs tracking-widest uppercase px-3 py-1.5 rounded-sm border border-transparent text-purple-300 hover:text-purple-500 transition-all">Active</button>
+        <button id="filter-done"   onclick="setFilter('done')"   class="font-mono text-xs tracking-widest uppercase px-3 py-1.5 rounded-sm border border-transparent text-purple-300 hover:text-purple-500 transition-all">Done</button>
+        <div class="flex-1"></div>
+        <button onclick="clearDone()" class="bg-transparent border border-purple-200 text-purple-300 font-mono text-xs tracking-widest uppercase rounded px-3 py-1.5 hover:border-pink-400 hover:text-pink-400 transition-all">Clear Done</button>
+      </div>
+      <div id="todo-list" class="flex flex-col gap-2"></div>
+      <p class="font-mono text-xs text-center text-purple-300 mt-6 hidden" id="todo-empty">No tasks here.</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
