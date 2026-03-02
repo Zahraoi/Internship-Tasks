@@ -106,12 +106,6 @@ npm run dev
 ```
 Frontend runs on http://localhost:5173
 
-### Build for Production
-```bash
-cd client
-npm run build
-```
-
 ## API Endpoints
 
 ### Authentication
