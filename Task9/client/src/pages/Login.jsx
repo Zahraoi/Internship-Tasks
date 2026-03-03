@@ -32,9 +32,9 @@ const Login = () => {
 
   return (
     <div className={`min-h-screen flex items-center justify-center ${isDark ? 'bg-gray-900' : 'bg-gray-100'}`}>
-      <div className={`${isDark ? 'bg-gray-800' : 'bg-white'} p-8 rounded-xl shadow-2xl w-96`}>
+      <div className={`${isDark ? 'bg-gray-800' : 'bg-white'} p-8 rounded-xl shadow-lg w-96`}>
         <div className="text-center mb-8">
-          <h1 className={`text-3xl font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>Library Management</h1>
+          <h1 className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>Library Management</h1>
           <p className={`mt-2 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>Admin Login</p>
         </div>
 
@@ -45,7 +45,7 @@ const Login = () => {
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className={`w-full p-3 border rounded-lg ${isDark ? 'bg-gray-700 text-white border-gray-600' : 'border-gray-300'}`}
+              className={`w-full p-3 border rounded-lg ${isDark ? 'bg-gray-700 text-white border-gray-600 placeholder-gray-400' : 'bg-white text-gray-800 border-gray-300'}`}
               placeholder="admin@library.com"
               required
             />
@@ -57,14 +57,14 @@ const Login = () => {
               type="password"
               value={formData.password}
               onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-              className={`w-full p-3 border rounded-lg ${isDark ? 'bg-gray-700 text-white border-gray-600' : 'border-gray-300'}`}
+              className={`w-full p-3 border rounded-lg ${isDark ? 'bg-gray-700 text-white border-gray-600 placeholder-gray-400' : 'bg-white text-gray-800 border-gray-300'}`}
               placeholder="Enter password"
               required
             />
           </div>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg">
+            <div className={`mb-4 p-3 rounded-lg ${isDark ? 'bg-red-900/50 text-red-200 border border-red-700' : 'bg-red-100 text-red-700 border border-red-300'}`}>
               {error}
             </div>
           )}
@@ -72,14 +72,14 @@ const Login = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition disabled:opacity-50"
+            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition disabled:opacity-50 font-medium"
           >
             {loading ? 'Logging in...' : 'Login'}
           </button>
         </form>
 
-        <div className={`mt-4 text-center text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
-          Default: admin@library.com / admin123(hardcodded) - For demo purposes only
+        <div className={`mt-6 text-center text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+          Default: admin@library.com / admin123 - Demo only
         </div>
       </div>
     </div>
