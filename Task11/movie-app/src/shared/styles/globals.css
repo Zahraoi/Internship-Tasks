@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-netflix-red text-white px-6 py-2.5 rounded-md font-semibold 
+           hover:bg-red-700 transition-all duration-200 
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 text-white px-6 py-2.5 rounded-md font-semibold 
+           hover:bg-gray-600 transition-all duration-200 
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-md border border-gray-300 
+           dark:border-gray-600 bg-white dark:bg-gray-800 
+           text-gray-900 dark:text-white
+           focus:outline-none focus:ring-2 focus:ring-netflix-red focus:border-transparent
+           placeholder:text-gray-400 dark:placeholder:text-gray-500
+           transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:scale-105 hover:z-10;
+  }
+
+  .shimmer {
+    @apply bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 
+           dark:from-gray-700 dark:via-gray-600 dark:to-gray-700 
+           bg-[length:200%_100%] animate-shimmer;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
