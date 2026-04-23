@@ -1,0 +1,63 @@
+Weekly Report – Web Development Tasks
+Name: Umam Zahra
+Week Ending: 15th March 2026 (5th weekly report)
+Department: Web Development Internship - Codemetics
+
+1. Assigned Tasks
+This week, I was assigned to build a complete full-stack Personal Finance Dashboard using modern web technologies. The tasks included:
+1. Personal Finance Dashboard - Full Stack Development
+• Built a complete Personal Finance Dashboard with React frontend and Node.js/Express backend.
+• Implemented MongoDB Atlas database for data storage.
+• Created a responsive user interface using Tailwind CSS.
+2. Authentication System
+• Developed user registration and login functionality.
+• Implemented JWT-based authentication with protected routes.
+• Added logout functionality.
+3. Dashboard Module
+• Created a dashboard displaying summary cards: Income, Expense, Balance.
+• Added month filtering selector for viewing specific month's data.
+• Included undo/redo buttons for transaction actions.
+• Added CSV export functionality for transactions.
+4. Transaction Management Module
+• Implemented Add, View, Edit, and Delete functionality for transactions.
+• Added categories: food, transport, entertainment, shopping, bills, health, income, other.
+• Included debounced search and category filtering.
+• Displayed transactions grouped by month.
+5. Budget Management Module
+• Created functionality to set monthly budgets by category.
+• Added visual progress bars showing budget utilization.
+• Implemented budget alerts (approaching limit and exceeded).
+6. Reports Module
+• Built monthly spending bar chart using Recharts.
+• Created category breakdown pie chart.
+• Added clickable charts for detailed view.
+7. Sidebar Navigation
+• Created sidebar with Dashboard, Transactions, Budget, Reports, Settings tabs.
+• Implemented smooth scroll to sections when clicking sidebar items.
+• Added highlight animation on sidebar navigation.
+8. Dark/Light Mode
+• Implemented full dark mode support throughout the application.
+• Added toggle button in the sidebar for theme switching.
+9. Currency Configuration
+• Configured all amounts to display in Pakistani Rupees (Rs.).
+
+2. Extent of Completion
+I am pleased to report that I have successfully completed the Personal Finance Dashboard. Key points of completion include:
+• Full-stack application built with React, Node.js, Express, and MongoDB Atlas.
+• Authentication system with registration/login/logout functionality.
+• All CRUD operations implemented for transactions.
+• Budget management with visual progress bars and alerts.
+• Reports with interactive charts (bar chart and pie chart).
+• Month filtering for transactions and budgets.
+• Search functionality with debounced input.
+• CSV export for transaction data.
+• Undo/redo functionality for transaction actions.
+• Sidebar navigation with smooth scroll and highlight animation.
+• Dark mode support for the entire application.
+• Responsive design using Tailwind CSS.
+• All amounts displayed in PKR (Rs.).
+
+I feel confident that the project demonstrates a strong understanding of full-stack web development, including React components, state management, API integration, database operations, data visualization with Recharts, and responsive design with Tailwind CSS.
+
+GitHub link:
+https://github.com/Zahraoi/Internship-Tasks/tree/master/Task10
